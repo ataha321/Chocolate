@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Box</title>
+    <script src="./lib/jquery-3.6.3.js"></script>
+    <script src="chocs.js"></script>
+    <style>
+        body {
+        background-color: #865f29;
+        }
+        .chocolateWrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        }
+
+        .box {
+        flex: 0 0 150px;
+        height: auto;
+        background-color: #fffdd0;
+        margin: 5px;
+        color: darkolivegreen;
+        box-sizing: border-box;
+        padding: 10px;
+        font-size: small;
+        border-radius: 10px;
+        border: dotted 5px rgba(67, 64, 64, 0.968);
+
+        }
+
+        img {
+        width: 100%;
+        height: 120px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px grey;
+        border-radius: 10px;
+        }
+
+        button{
+            border-radius: 10px;
+            padding:10px;
+
+        }
+
+        button:hover{
+            background-color: rgb(168, 223, 168);
+            color: rgb(58, 35, 7);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <button type="button" onclick="toggleDetails()">
+        Show/Hide calories and details
+        </button>
+
+        <button type="button" onclick="highlightRandomChocolate()">
+        Pick random sample chocolate
+        </button>
+    </p>
+    
+</body>
+</html>
